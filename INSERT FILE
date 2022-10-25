@@ -67,7 +67,19 @@ INSERT INTO RESOURCES(resourceID,ResourceType,Availabilty,Privileges_LEVEL) valu
 (496, 'Journal-Article'  , 'Available',4),
 (478, 'Journal-Newspaper'  , 'Available',5),
 (948, 'Journal-Newspaper'  , 'Available',4),
-(375, 'Journal-Article'  , 'Unavailable',4));
+(375, 'Journal-Article'  , 'Unavailable',4),
+(110, 'Sound-Record'  , 'Available',3),
+(115, 'Sound-Record'  , 'Unavailable',4),
+(111, 'Video-Record'  , 'Available',4),
+(112, 'Sound-Record'  , 'Available',2),
+(113, 'Sound-Record'  , 'Unavailable',4),
+(114, 'Sound-Record'  , 'Available',3),
+(001, 'Thesis'  , 'Unavailable',4),
+(002, 'Thesis'  , 'Available',3),
+(003, 'Thesis'  , 'Available',5),
+(004, 'Thesis'  , 'Available',1),
+(005, 'Thesis'  , 'Unavailable',4),
+(006, 'Thesis'  , 'Available',2));
 
 
 
@@ -80,3 +92,20 @@ values
 , ( 3 ,'staff','30 days ',2, 3 )
 , ( 4,'Undergraduate_Student','14 days ',  2,  3) 
 , ( 5,'Community_Patrons','7 days ', 1 , 1 ) ;
+
+
+/-------------------------------- Privilege insert--------------------------/
+
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (001,'pandemic COVID-19','The effects of the COVID-19 pandemic',23 ,'HEALTH' );
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (002,'DNA evidence in criminal justice','Analysis and research on DNA evidence in criminal justice.',18 ,'Criminal Law' );
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (003,'Racism in schools and colleges','The extent of racism in schools and colleges and the factors affecting',34 ,'social' );
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (004,'Economic development and happiness', 'The effect of economic development on happiness',13 ,'Economic' );
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (005,'The consequences of obesity','The long-term health and psychological impact of obesity',12 ,'HEALTH' );
+insert into Thesis ( T_ID , T_Title , T_DESCRIPTION, AuthorID , T_Location)
+values (006,'The influence of social media.','The consequences of social media and how it can be used to serve the human being',16 ,'social' );
+
